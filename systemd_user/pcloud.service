@@ -1,0 +1,9 @@
+[Unit]
+Description=Start PCloud
+Wants=network-online.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/pcloud 
+
+

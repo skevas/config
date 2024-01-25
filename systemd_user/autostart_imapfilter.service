@@ -1,0 +1,11 @@
+[Unit]
+Description=Filter mails 
+Wants=network-online.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/imapfilter -c .config/imapfilterrc.lua
+Restart=no
+
+[Install]
+WantedBy=default.target

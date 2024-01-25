@@ -1,0 +1,11 @@
+[Unit]
+Description=Copy matinale website code to pCloud
+Wants=network-online.target
+
+[Service]
+Type=exec
+ExecStartPre=/bin/systemctl --user start pcloud.service
+ExecStart=/bin/bash /home/r/backup/matinale-code.sh
+Restart=on-failure
+RestartSec=5s
+

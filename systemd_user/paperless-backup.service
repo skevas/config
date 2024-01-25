@@ -1,0 +1,11 @@
+[Unit]
+Description=Paperless Backup
+Wants=network-online.target
+
+[Service]
+Type=exec
+ExecStartPre=/bin/systemctl --user start pcloud.service
+ExecStart=/bin/bash /home/r/backup/paperless.sh
+Restart=on-failure
+RestartSec=5s
+
