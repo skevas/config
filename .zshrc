@@ -114,3 +114,5 @@ promptinit; prompt gentoo
 
 zstyle ':completition::complete:*' use-cache 1
 . /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+alias w_full="curl 'wttr.in/Sankt+Augustin?&lang=de'"
+alias w_short="curl 'wttr.in/Sankt+Augustin?&lang=de&format=3'
