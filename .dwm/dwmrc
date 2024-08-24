@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Symbols require media-fonts/fontawesome
+
+while true; do
+	xsetroot -name "`date +"%H:%M:%S %d.%m."` [`if grep -q "1" /sys/class/power_supply/AC/online; then echo ""; else echo ""; fi` | `cat /sys/class/power_supply/BAT0/capacity`]"
+	sleep 2
+done
