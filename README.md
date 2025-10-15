@@ -11,6 +11,8 @@
 ### Forgot how DWM works?
 * Layouts and elements explained [Dave's Visual Guide to dwm](https://ratfactor.com/dwm)
 
+## Gentoo
+```/etc/portage/repos.conf/local.conf``` adds an on disk repo and my private github repo
 
 ## tmux
 * .tmux.conf is very simple. It's mostly used to allow nested tmux sessions on remote hosts.
